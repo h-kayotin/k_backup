@@ -1,0 +1,58 @@
+{
+    "mouseover": [
+        {
+            "selector": ".menu-item",
+            "text": ["要看看<span style='color:#0099cc;'> {text} </span>么？"]
+        },
+      {
+        "selector": "#landlord #live2d",
+        "text": [ "お疲れ様です。", "ご機嫌よう", "仕事、頑張ってね" ]
+      },
+      {
+        "selector": "#comment",
+        "text": [ "谢谢你的宝贵留言~~" ]
+      },
+      {
+        "selector": "#author",
+        "text": [ "你的名字是？" ]
+      },
+      {
+        "selector": "#email",
+        "text": [ "这样就能联系到你了呢~" ]
+      },
+      {
+        "selector": "#url",
+        "text": [ "记住了，下次会去看看的呢" ]
+      },
+      {
+        "selector": "#submit",
+        "text": [ "要提交了吗？" ]
+      },
+      {
+        "selector": "#prev",
+        "text": [ "要看看之前的文章吗？" ]
+      },
+      {
+        "selector": "#search-form-1",
+        "text": [ "要找什么吗？" ]
+      },
+      {
+        "selector": ".link-more",
+        "text": [ "要阅读全文吗？" ]
+      },
+      {
+        "selector": ".icon icon-arrow-right",
+        "text": [ "要查看下一页吗？" ]
+      },
+      {
+        "selector": ".icon icon-arrow-left",
+        "text": [ "要查看上一页吗？" ]
+      }
+    ],
+    "click": [
+        {
+            "selector": "#landlord #live2d",
+            "text": ["手を離れ！~~", "真…真的是不知羞耻！","変態！", "再摸的话我可要报警了！⌇●﹏●⌇", "警察を呼びますから(ó﹏ò｡)"]
+        }
+    ]
+}
