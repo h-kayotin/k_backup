@@ -63,7 +63,11 @@ initTips();
     if(document.referrer !== ''){
         var referrer = document.createElement('a');
         referrer.href = document.referrer;
-        text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+        if (referrer.hostname!== window.location.hostname) {
+            text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+        } else {
+            text = '欢迎回来！';
+        }
         var domain = referrer.hostname.split('.')[1];
         if (domain == 'baidu') {
             text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
@@ -101,10 +105,16 @@ initTips();
     showMessage(text, 12000);
 })();
 
-window.setInterval(showHitokoto,30000);
+window.setInterval(showHitokoto,10000);
 
 function showHitokoto(){
     $.getJSON('https://v1.hitokoto.cn/?c=a',function(result){
+    // 添加作者和出处信息
+    if (result.from_who) {
+      result.hitokoto += ' —— ' + result.from_who + '《' + result.from + '》';
+    } else {
+      result.hitokoto += ' —— ' + '《' + result.from + '》';
+    }
         showMessage(result.hitokoto, 5000);
     });
 }

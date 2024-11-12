@@ -1,7 +1,7 @@
 #landlord {
     user-select: none;
     position: fixed;
-    left: 30px;
+    right: 20px;
     bottom: 0;
     width: 280px;
     height: 250px;
@@ -23,10 +23,10 @@
     top: -80px;
     left: -10px;
     text-align: center;
-    border: 1px solid rgba(255,137,255,.4);
+    border: 1px solid rgba(135, 206, 250, 0.4);
     border-radius: 12px;
-    background-color: rgba(255,137,255,.2);
-    box-shadow: 0 3px 15px 2px rgba(255,137,255,.4);
+    background-color: rgba(135, 206, 250, 0.2);
+    box-shadow: 0 3px 15px 2px rgba(135, 206, 250, 0.4);
     font-size: 13px;
     font-weight: 400;
     text-overflow: ellipsis;
@@ -50,16 +50,38 @@
     /* padding: 4px; */
     width: 60px;
     height: 20px;
-    border: 1px solid rgba(255,137,255,.4);
+    border: 1px solid rgba(135, 206, 250, 0.4);
     border-radius: 12px;
-    background: rgba(255,137,255,.2);
-    box-shadow: 0 3px 15px 2px rgba(255,137,255,.4);
+    background-color: rgba(135, 206, 250, 0.2);
+    box-shadow: 0 3px 15px 2px rgba(135, 206, 250, 0.4);
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+.switch-button {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    /* bottom: 30px; */
+    display: none;
+    overflow: hidden;
+    /* padding: 4px; */
+    width: 60px;
+    height: 20px;
+    border: 1px solid rgba(135, 206, 250, 0.4);
+    border-radius: 12px;
+    background-color: rgba(135, 206, 250, 0.2);
+    box-shadow: 0 3px 15px 2px rgba(135, 206, 250, 0.4);
     text-align: center;
     font-size: 12px;
     cursor: pointer;
 }
 
 .hide-button:hover {
+    border: 1px solid #f4a7b9;
+    background: #f4f6f8;
+}
+.switch-button:hover {
     border: 1px solid #f4a7b9;
     background: #f4f6f8;
 }
