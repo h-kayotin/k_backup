@@ -28,7 +28,7 @@
 
 默认Wordpress站点logo是一个W，作为一个专业的博客肯定要修改成自己的logo。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6d90d715-36a6-4383-80ae-2060c8094f8e/c2f65bbf-4529-4d4b-a8d8-d01b4b39da8e/image.png)
+![image.png](/image/logo.png)
 
 ### 添加看板娘
 
